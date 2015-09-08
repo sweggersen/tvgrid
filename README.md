@@ -47,7 +47,7 @@ These are all the available stylables from XML:
 You can modify the View programtically in Java as well, like this:
 
     TVGridView tvGridView = (TVGridView) findViewById(R.id.tv_grid_view);
-    tvGridView.setSelectorPosition(StrokeRecyclerView.SelectorPosition.OVER);
+    tvGridView.setSelectorPosition(TVGridView.SelectorPosition.OVER);
     tvGridView.setFilled(true);
     tvGridView.setFillColor(Color.BLUE);
     tvGridView.setFillAlpha(0.3f);
