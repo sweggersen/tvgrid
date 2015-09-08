@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="defStrokePosition">0</integer>
-    <integer name="defSelectorPosition">0</integer>
-    <item name="defFillAlpha" format="float" type="dimen">0.5</item>
-    <item name="defFillAlphaSelected" format="float" type="dimen">0.5</item>
-    <dimen name="defStrokeWidth">0dp</dimen>
-    <dimen name="defCornerRadius">5dp</dimen>
-    <dimen name="defStrokeMarginLeft">0dp</dimen>
-    <dimen name="defStrokeMarginTop">0dp</dimen>
-    <dimen name="defStrokeMarginRight">0dp</dimen>
-    <dimen name="defStrokeMarginBottom">0dp</dimen>
-    <dimen name="defStrokeSpacingLeft">0dp</dimen>
-    <dimen name="defStrokeSpacingTop">0dp</dimen>
-    <dimen name="defStrokeSpacingRight">0dp</dimen>
-    <dimen name="defStrokeSpacingBottom">0dp</dimen>
+    <integer name="tvg_defStrokePosition">0</integer>
+    <integer name="tvg_defSelectorPosition">0</integer>
+    <item name="tvg_defFillAlpha" format="float" type="dimen">0.5</item>
+    <item name="tvg_defFillAlphaSelected" format="float" type="dimen">0.5</item>
+    <dimen name="tvg_defStrokeWidth">0dp</dimen>
+    <dimen name="tvg_defCornerRadius">5dp</dimen>
+    <dimen name="tvg_defStrokeMarginLeft">0dp</dimen>
+    <dimen name="tvg_defStrokeMarginTop">0dp</dimen>
+    <dimen name="tvg_defStrokeMarginRight">0dp</dimen>
+    <dimen name="tvg_defStrokeMarginBottom">0dp</dimen>
+    <dimen name="tvg_defStrokeSpacingLeft">0dp</dimen>
+    <dimen name="tvg_defStrokeSpacingTop">0dp</dimen>
+    <dimen name="tvg_defStrokeSpacingRight">0dp</dimen>
+    <dimen name="tvg_defStrokeSpacingBottom">0dp</dimen>
+    <integer name="tvg_defIsFilled">0</integer>
+    <integer name="tvg_defAnimateSelectorChanges">0</integer>
 </resources>

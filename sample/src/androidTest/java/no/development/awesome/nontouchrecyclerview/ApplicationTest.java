@@ -1,4 +1,4 @@
-package no.development.awesome.nontouchrecyclerview;
+package info.development.awesome.nontouchrecyclerview;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

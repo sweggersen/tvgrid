@@ -1,4 +1,4 @@
-package no.development.awesome.nontouchrecyclerview;
+package info.awesomedevelopment.tvgrid.sample;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.view.WindowManager;
 import android.widget.AbsListView;
 import android.widget.TextView;
 
-import no.development.awesome.library.StrokeRecyclerView;
+import info.awesomedevelopment.tvgrid.library.TVGridView;
 
 public class ExampleMain extends Activity {
 
@@ -31,7 +31,7 @@ public class ExampleMain extends Activity {
         final int cellMargin = (int) getResources().getDimension(R.dimen.cell_margin);
         final int recyclerViewPadding = (int) getResources().getDimension(R.dimen.recycle_view_padding);
 
-        StrokeRecyclerView recyclerView = (StrokeRecyclerView) findViewById(R.id.stroke_recycler_view);
+        final TVGridView recyclerView = (TVGridView) findViewById(R.id.tv_grid_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override
@@ -50,14 +50,13 @@ public class ExampleMain extends Activity {
 
         mCellWidth = (size.x - (2*mumColumns*cellMargin) - (2*recyclerViewPadding)) / mumColumns;
         mCellHeight = mCellWidth / 2;
-
     }
 
     public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
-        private StrokeRecyclerView mRecyclerView;
+        private TVGridView mRecyclerView;
 
-        public Adapter(StrokeRecyclerView recyclerView) {
+        public Adapter(TVGridView recyclerView) {
             mRecyclerView = recyclerView;
         }
 
@@ -88,10 +87,9 @@ public class ExampleMain extends Activity {
 
                 @Override
                 public void onFocusChange(final View view, final boolean b) {
-                    mRecyclerView.highlightView(view, b);
+                    mRecyclerView.selectView(view, b);
                 }
             });
-
         }
 
         @Override
@@ -99,5 +97,4 @@ public class ExampleMain extends Activity {
             return 50;
         }
     }
-
 }

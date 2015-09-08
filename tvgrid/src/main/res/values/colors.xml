@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="defFillColor">@android:color/darker_gray</color>
-    <color name="defFillColorSelected">@android:color/darker_gray</color>
-    <color name="defStrokeColor">@android:color/white</color>
-    <color name="defStrokeColorSelected">@android:color/white</color>
+    <color name="tvg_defFillColor">@android:color/darker_gray</color>
+    <color name="tvg_defFillColorSelected">@android:color/darker_gray</color>
+    <color name="tvg_defStrokeColor">@android:color/white</color>
+    <color name="tvg_defStrokeColorSelected">@android:color/white</color>
 </resources>

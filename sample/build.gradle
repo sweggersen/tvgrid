@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://repos.zeroturnaround.com/nexus/content/repositories/zt-public-releases'
+        }
+    }
+    dependencies {
+        // This does not break the build when Android Studio is missing the JRebel for Android plugin.
+        classpath 'com.zeroturnaround.jrebel.android:jr-android-gradle:0.9.+'
+    }
+}
+apply plugin: 'com.android.application'
+// This does not break the build when Android Studio is missing the JRebel for Android plugin.
+apply plugin: 'com.zeroturnaround.jrebel.android'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "info.awesomedevelopment.tvgrid.sample"
+        minSdkVersion 13
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile project(':tvgrid')
+}

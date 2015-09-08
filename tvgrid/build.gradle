@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-version = "1.0.1"
+version = "1.1.0"
 group = "info.awesomedevelopment"
 
 ext {
@@ -125,11 +125,6 @@ bintray {
         publicDownloadNumbers = true
         version {
             desc = libraryDescription
-            gpg {
-                sign = true //Determines whether to GPG sign the files. The default is false
-                passphrase = properties.getProperty("bintray.gpg.password")
-                //Optional. The passphrase for GPG signing'
-            }
         }
     }
 }

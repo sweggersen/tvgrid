@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<no.development.awesome.library.StrokeRecyclerView
+<info.awesomedevelopment.tvgrid.library.TVGridView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/stroke_recycler_view"
+    android:id="@+id/tv_grid_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/recycle_view_padding"
     android:clipToPadding="false"
     android:background="@android:color/darker_gray"
-    app:nt_animateSelectorChanges="false"
-    app:nt_selectorPosition="over"
-    app:nt_strokePosition="inside"
-    app:nt_strokeColor="@android:color/white"
-    app:nt_strokeWidth="@dimen/cell_stroke_width"
-    app:nt_cornerRadius="@dimen/cell_corner_radius"
-    app:nt_marginBottom="@dimen/cell_bottom_margin"/>
+    app:tvg_animateSelectorChanges="true"
+    app:tvg_selectorPosition="over"
+    app:tvg_strokePosition="inside"
+    app:tvg_strokeColor="@android:color/white"
+    app:tvg_strokeWidth="@dimen/cell_stroke_width"
+    app:tvg_cornerRadius="@dimen/cell_corner_radius"
+    app:tvg_marginBottom="@dimen/cell_bottom_margin"/>
 
 <!--
 HOLO SELECTOR
 <no.development.awesome.library.StrokeRecyclerView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/stroke_recycler_view"
+    android:id="@+id/tv_grid_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/recycle_view_padding"
