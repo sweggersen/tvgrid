@@ -1,9 +1,9 @@
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+/.idea
 .DS_Store
 /build
+*.iml
 
 ### Android template
 # Built application files
@@ -33,7 +33,5 @@ proguard/
 
 # Log Files
 *.log
-
-
 
 gradle.propertiesgradle.properties
