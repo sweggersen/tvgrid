@@ -13,7 +13,7 @@ RecyclerView for devices using arrow keys or D-Pad to navigate. (Of course it Wo
 1) Add the library as a dependency to your build.gradle
 
     dependencies {
-        compile 'info.awesomedevelopment.tvgrid:tvgrid:1.1.0'
+        compile 'info.awesomedevelopment:tvgrid:1.1.0'
     }
     
     
